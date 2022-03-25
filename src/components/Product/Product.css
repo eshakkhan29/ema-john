@@ -1,0 +1,16 @@
+.card{
+    border-radius: 15px;
+}
+.image{
+    border-radius: 20px;
+}
+.cart-button{
+    border: none;
+    outline: none;
+    background-color: #FFE0B3;
+    border-radius: 0px 0px 15px 15px;
+}
+.cart-button:hover{
+    background-color: #ffb950;
+    transition: 0.3s ease;
+}
