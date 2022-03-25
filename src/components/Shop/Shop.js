@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { addToDb, getStorCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
@@ -10,10 +11,25 @@ const Shop = () => {
         fetch('products.json')
         .then(res => res.json())
         .then(data => setProduct(data))
-    },[])
+    },[]);
+
+    useEffect(() => {
+        const storCart = getStorCart();
+        const saveProduct = [];
+        for (const id in storCart) {
+             const addedProduct = product.find(product => product.id === id);
+             if (addedProduct) {
+                 const quantity = storCart[id];
+                 addedProduct.quantity = quantity;
+                 saveProduct.push(addedProduct);
+             }
+        }
+        setCart(saveProduct);
+    },[product]);
     const addToCart = (product) => {
         const newCart = [...cart, product];
         setCart(newCart);
+        addToDb(product.id);
     }
     return (
         <div className='container-fluid'>
