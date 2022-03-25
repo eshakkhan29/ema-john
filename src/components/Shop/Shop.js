@@ -18,8 +18,8 @@ const Shop = () => {
     return (
         <div className='container-fluid'>
             <div className='row row-cols-lg-2 row-cols-1 d-flex justify-content-between'>
-                <div className='col-lg-10 col-7 p-lg-5'>
-                    <div className='row row-cols-lg-3 row-cols-1 g-4 p-lg-5'>
+                <div className='col-lg-10 col-7 p-lg-5 pt-4'>
+                    <div className='row row-cols-lg-3 row-cols-1 g-lg-4 gy-4 p-lg-5'>
                     {
                         product.map(product => <Product 
                             key={product.id} 
