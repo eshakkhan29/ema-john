@@ -1,6 +1,9 @@
 .header{
     background-color: #1C2B35;
     height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 .header a{
     text-decoration: none;
@@ -8,5 +11,5 @@
     color: white;
 }
 .header a:hover{
-    color: #FFE0B3;
+    color: #fabf66;
 }

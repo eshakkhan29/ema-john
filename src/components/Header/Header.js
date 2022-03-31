@@ -11,9 +11,10 @@ const Header = () => {
                     <img src={logo} alt="" />
                 </div>
                 <div className='col text-end'>
-                    <a className='me-4 ' href="/Order">Order</a>
-                    <a className='me-4 ' href="/Review">Review</a>
-                    <a className='me-4 ' href="/Inventory">Inventory</a>
+                    <a className='me-4 ' href="/shop">Shop</a>
+                    <a className='me-4 ' href="/orders">Orders</a>
+                    <a className='me-4 ' href="/inventory">Inventory</a>
+                    <a className='me-4 ' href="/about">About</a>
                 </div>
                 </div>
             </div>
