@@ -1,3 +1,6 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
 import useCart from "../../hooks/useCart";
 import useProducts from "../../hooks/useProducs";
 import { addToDb } from "../../utilities/fakedb";
@@ -23,6 +26,15 @@ const Shop = () => {
     setCart(newCart);
     addToDb(products.id);
   };
+  const clearCart = [];
+  const removeCart = () => {
+    setCart(clearCart);
+  };
+  const navigate = useNavigate();
+  const orderReview = () => {
+    const path = "/orders";
+    navigate(path);
+  };
 
   return (
     <div className="container-fluid">
@@ -39,7 +51,14 @@ const Shop = () => {
           </div>
         </div>
         <div className="col-lg-2 col-5 p-0">
-          <Cart item={cart}></Cart>
+          <Cart removeCart={removeCart} item={cart}>
+            <button onClick={orderReview} className="btn review-btn w-75 p-2 text-white">
+              Review Order
+              <span className="ms-2">
+                <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+              </span>
+            </button>
+          </Cart>
         </div>
       </div>
     </div>

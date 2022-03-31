@@ -1,6 +1,6 @@
 .cart{
     background-color: #FFE0B3;
-    /* height: 100vh; */
-    position: sticky;
-    top: 0;
+    height: 100vh;
+    position: fixed;
+    top: 80;
 }
