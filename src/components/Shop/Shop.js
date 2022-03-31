@@ -52,8 +52,11 @@ const Shop = () => {
         </div>
         <div className="col-lg-2 col-5 p-0">
           <Cart removeCart={removeCart} item={cart}>
-            <button onClick={orderReview} className="btn review-btn p-2 text-white">
-              Review Order
+            <button
+              onClick={orderReview}
+              className="btn review-btn p-2 text-white"
+            >
+              Review Orders
               <span className="ms-2">
                 <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
               </span>
