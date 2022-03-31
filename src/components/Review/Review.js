@@ -8,8 +8,8 @@ const Review = ({ product, removeReview }) => {
   return (
     <div className="review-item mt-3 p-2">
       <div className="d-flex">
-        <img className="rounded-3" width={90} src={img} alt="" />
-        <div className="d-flex justify-content-between align-items-center w-100 ms-2">
+        <img className="rounded-3" width={90} src={img} alt={name} />
+        <div className="d-flex justify-content-between align-items-center w-100 ms-3">
           <div className="info">
             <h4 className="m-0" title={name}>
               {name.length > 20 ? name.slice(0, 20) + "..." : name}
@@ -30,7 +30,7 @@ const Review = ({ product, removeReview }) => {
               className="delete-button"
             >
               <FontAwesomeIcon
-                className="dbtn"
+                className="d-icon"
                 icon={faTrashAlt}
               ></FontAwesomeIcon>
             </button>

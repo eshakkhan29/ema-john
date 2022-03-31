@@ -24,7 +24,7 @@ const Orders = () => {
   };
   return (
     <div className="container">
-      <div className="row row-cols-lg-2 row-cols-1 mt-5">
+      <div className="row row-cols-lg-2 row-cols-1">
         <div className="col p-5 d-flex flex-column align-items-center justify-content-center">
           {cart.map((product) => (
             <Review
@@ -34,11 +34,11 @@ const Orders = () => {
             ></Review>
           ))}
         </div>
-        <div className="col p-5 position-relative">
+        <div className="col">
           <Cart item={cart}>
             <button
               onClick={ProceedCheckout}
-              className="btn checkout-btn w-75 p-2 text-white"
+              className="btn checkout-btn p-2 text-white"
             >
               Proceed Checkout
               <span className="ms-2">

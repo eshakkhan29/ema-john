@@ -24,8 +24,8 @@ const Cart = ({ item, removeCart, children }) => {
         <p>Tax: ${tax}</p>
         <h5>Grand Total: ${grandTotal}</h5>
       </div>
-      <div className="text-center mt-5">
-        <button onClick={removeCart} className="btn btn-danger w-75 p-2 mb-3">
+      <div className="mt-5 d-flex flex-column">
+        <button onClick={removeCart} className="btn btn-danger p-2 mb-3">
           Clear Cart
           <span className="ms-2">
             <FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon>
