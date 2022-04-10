@@ -16,6 +16,7 @@ const Header = () => {
                     <Link className='me-4 ' to="/orders">Orders</Link>
                     <Link className='me-4 ' to="/inventory">Inventory</Link>
                     <Link className='me-4 ' to="/about">About</Link>
+                    <Link className='me-4' to="/login">Login</Link>
                 </div>
                 </div>
             </div>
