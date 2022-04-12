@@ -18,8 +18,8 @@ const Orders = () => {
     removeFromDb(product.id);
   };
   const navigate = useNavigate();
-  const ProceedCheckout = () => {
-    const path = "/inventory";
+  const Shipment = () => {
+    const path = "/shipment";
     navigate(path);
   };
   return (
@@ -37,7 +37,7 @@ const Orders = () => {
         <div className="col">
           <Cart item={cart}>
             <button
-              onClick={ProceedCheckout}
+              onClick={Shipment}
               className="btn checkout-btn p-2 text-white"
             >
               Shipment
