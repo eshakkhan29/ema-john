@@ -13,3 +13,13 @@
 .header a:hover{
     color: #fabf66;
 }
+.logout-button{
+    background: #fabf66;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+}

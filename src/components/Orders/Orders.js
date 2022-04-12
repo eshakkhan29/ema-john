@@ -40,7 +40,7 @@ const Orders = () => {
               onClick={ProceedCheckout}
               className="btn checkout-btn p-2 text-white"
             >
-              Proceed Checkout
+              Shipment
               <span className="ms-2">
                 <FontAwesomeIcon icon={faCreditCard}></FontAwesomeIcon>
               </span>
